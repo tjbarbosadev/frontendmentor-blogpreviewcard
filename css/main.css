@@ -1,0 +1,91 @@
+:root {
+  --color-yellow: hsl(45, 95%, 64%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-950: hsl(0, 0%, 7%);
+  --color-grey-500: hsl(0, 0%, 42%);
+  --text-preset-1: 700 2.4rem/1.5 "Figtree", sans-serif;
+  --text-preset-2: 400 1.6rem/1.5 "Figtree", sans-serif;
+  --text-preset-3: 400 1.4rem/1.5 "Figtree", sans-serif;
+  --text-preset-3-bold: 700 1.4rem/1.5 "Figtree", sans-serif;
+  --spacing-300: 2.4rem;
+  --spacing-150: 1.2rem;
+  --spacing-100: 0.8rem;
+  --spacing-50: 0.4rem;
+}
+
+:where(*, *::before, *::after) {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:where(html) {
+  hanging-punctuation: first last;
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+main {
+  background-color: var(--color-yellow);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-grey-950);
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 38.4rem;
+  gap: var(--spacing-300);
+  background-color: var(--color-white);
+  padding: var(--spacing-300);
+  border: 1px solid var(--color-grey-950);
+  border-radius: 2rem;
+  box-shadow: var(--spacing-50) var(--spacing-50) 0 var(--color-grey-950);
+}
+.blog-card__img {
+  display: inline-block;
+  width: 100%;
+}
+.blog-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-150);
+}
+.blog-card__category {
+  font: var(--text-preset-3-bold);
+  display: inline-block;
+  padding: var(--spacing-50) var(--spacing-150);
+  background-color: var(--color-yellow);
+  border-radius: var(--spacing-50);
+}
+.blog-card__publish-date {
+  font: var(--text-preset-3);
+}
+.blog-card__title {
+  font: var(--text-preset-1);
+}
+.blog-card__description {
+  font: var(--text-preset-2);
+  color: var(--color-grey-500);
+}
+.blog-card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150);
+}
+.blog-card__userpic {
+  width: 3.2rem;
+}
+.blog-card__authorname {
+  font: var(--text-preset-3-bold);
+}
+
+/*# sourceMappingURL=main.css.map */

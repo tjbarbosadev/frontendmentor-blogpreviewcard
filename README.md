@@ -1,2 +1,1 @@
 # frontendmentor-blogpreviewcard
-# frontendmentor-blogpreviewcard
